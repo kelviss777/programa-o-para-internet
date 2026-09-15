@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 8 - Faturamento Diário</title>
+</head>
+
+<body>
+    <h1>Questão 8 - Análise de Faturamento Diário</h1>
+
+    <form method="POST" action="backend.php">
+        <label>Segunda-feira: R$ <input type="number" name="vendas[]" min="0" step="0.01" required></label>
+        <br><br>
+        <label>Terça-feira: R$ <input type="number" name="vendas[]" min="0" step="0.01" required></label>
+        <br><br>
+        <label>Quarta-feira: R$ <input type="number" name="vendas[]" min="0" step="0.01" required></label>
+        <br><br>
+        <label>Quinta-feira: R$ <input type="number" name="vendas[]" min="0" step="0.01" required></label>
+        <br><br>
+        <label>Sexta-feira: R$ <input type="number" name="vendas[]" min="0" step="0.01" required></label>
+        <br><br>
+        <label>Sábado: R$ <input type="number" name="vendas[]" min="0" step="0.01" required></label>
+        <br><br>
+        <label>Domingo: R$ <input type="number" name="vendas[]" min="0" step="0.01" required></label>
+
+        <br><br>
+
+        <button type="submit">Analisar faturamento</button>
+    </form>
+</body>
+
+</html>

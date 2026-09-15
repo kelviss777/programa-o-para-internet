@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 1 - Cálculo de Desconto</title>
+</head>
+
+<body>
+    <h1>Questão 1 - Cálculo de Desconto em Compra</h1>
+
+    <form method="POST" action="backend.php">
+        <label for="valor">Valor total da compra:</label>
+        <input type="number" id="valor" name="valor" min="0.01" step="0.01" required>
+
+        <br><br>
+
+        <label for="codigo">Tipo de cliente:</label>
+        <select id="codigo" name="codigo" required>
+            <option value="">Selecione</option>
+            <option value="1">Cliente Comum</option>
+            <option value="2">VIP</option>
+            <option value="3">Funcionário</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Calcular desconto</button>
+    </form>
+</body>
+
+</html>
